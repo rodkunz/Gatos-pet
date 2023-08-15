@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Mulish", sans-serif;
+  --color-base-blue: #065e7c;
+  --color-base-blue2: #387e96;
+}
+
+html,
+body,
+input {
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  
+}
+
+.app {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header form {
+  flex: 1;
+}
+
+header {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 1.6rem 2.5rem;
+  background-color: var(--color-base-blue);
+  width: 100%;
+  gap: 1.6rem 2.5rem;
+}
+
+header img {
+  height: 4.2rem;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 1.6rem 2.5rem;
+}
+
+.input-wrapper input {
+  display: flex;
+  padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+  align-items: center;
+  gap: 1.2rem;
+  border: 0;
+  border-radius: 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+}
+
+main {
+  overflow-y: scroll;
+  margin: 0 auto;
+  display: grid;
+  gap: 3.1rem;
+  justify-content: center;
+}
+
+.left p,
+.polegar {
+  margin-left: 1.2rem;
+}
+
+.left h1 {
+  margin-left: 1.2rem;
+}
+
+.container {
+  margin-left: 1.2rem;
+}
+
+.firstcat {
+  white-space: nowrap;
+  width: 100vw;
+}
+
+main h1 {
+  font-size: 2.4rem;
+}
+
+main img:nth-child(3) {
+  border-radius: 100%;
+  height: 12px;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+main img:nth-child(4) {
+  border-radius: 100%;
+  height: 12px;
+  border-radius: 8px;
+}
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+section img {
+  height: 8.4rem;
+}
+
+figure {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.tags {
+  margin-top: 1rem;
+  max-width: 21.5rem;
+}
+
+section p {
+  font-size: 1.6rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+}
+
+.polegar {
+  margin-bottom: 3.1rem;
+  margin-top: 2rem;
+}
+
+.left p {
+  max-width: 38.2rem;
+}
+
+footer {
+  background-color: var(--color-base-blue2);
+  display: flex;
+  padding: 1.6rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  
+}
+
+header {
+  --startY: -100%;
+  animation: move 0.2s;
+}
+
+footer {
+  animation: move 0.2s;
+  --startY: 100%;
+}
+
+.item {
+  animation: appear 0.5s;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(var(--startY));
+  }
+}
+
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  transform: scale(0.7);
+  }
+}
+
+@media (min-width: 1270px) {
+  main {
+    
+    display: flex;
+  }
+
+  
+
+  .firstcat {
+    width: 80.3rem;
+    animation: appear 0.5s;
+  }
+
+  .left {
+    margin-right: 4.85rem;
+    margin-left: 10.9rem;
+    margin-top: 4.4rem;
+    margin-bottom: 3.9rem;
+  }
+
+  .left p {
+    max-width: 80rem;
+  }
+
+  .container {
+    
+    margin-top: 3.7rem;
+  }
+}
